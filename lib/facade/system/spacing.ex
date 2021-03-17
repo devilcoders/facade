@@ -1,8 +1,6 @@
 defmodule Facade.System.Spacing do
   use Norm
 
-  alias Facade.System.Theme
-
   defstruct [
     :p,
     :px,

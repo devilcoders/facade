@@ -24,14 +24,14 @@ defmodule Surface.Components.ButtonTest do
     html =
       render_surface do
         ~H"""
-        <Button p={{ 5 }} mb={{ 4 }}>
+        <Button p={{ [5, {:hover, 10}] }} mb={{ 4 }}>
           Ok
         </Button>
         """
       end
 
     assert html =~ """
-           <button class="p-5 mb-4" type="button">
+           <button class="p-5 sm:hover:p-10 mb-4" type="button">
              Ok
            </button>
            """
