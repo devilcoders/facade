@@ -13,7 +13,7 @@ defmodule Facade.Attributes.Button do
 
   defmacro __using__(_) do
     quote do
-      use Facade.Attributes.{Global, Element}
+      use Facade.Attributes.Global
 
       @button_attributes [
         :autofocus,

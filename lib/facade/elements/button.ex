@@ -17,8 +17,7 @@ defmodule Facade.Elements.Button do
       get_attrs(attributes(), assigns)
       ++
         prop_to_attr_opts(
-          @class
-          ++ composed_classes(assigns), :class
+          @class, :class
         ),
       do: children
     }}
