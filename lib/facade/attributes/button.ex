@@ -136,6 +136,11 @@ defmodule Facade.Attributes.Button do
       """
       prop name, :string
 
+      prop role, :atom,
+        default: :button,
+        values:
+          ~w(button checkbox link menuitem menuitemcheckbox menuitemradio option radio switch tab)a
+
       @doc """
       The default behavior of the button. Possible values are:
 
