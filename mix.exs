@@ -42,7 +42,7 @@ defmodule Facade.MixProject do
       {:floki, "~> 0.30.0", only: :test},
       {:jason, "~> 1.0"},
       {:surface_catalogue, "~> 0.0.7", only: :dev},
-      {:surface_formatter, "~> 0.3.1"},
+      {:surface_formatter, "~> 0.3"},
       {:surface, "~> 0.3.2"},
       {:mix_test_watch, "~> 1.0", only: :dev, runtime: false},
       {:credo, "~> 1.5", only: [:dev, :test], runtime: false},
